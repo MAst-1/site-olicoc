@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Dosis&family=Bebas+Neue&family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 400vh;
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+/*pagina principal*/
+.container {
+    max-width: 100%;
+}
+
+.section {
+    max-width: 100%;
+}
+
+.container-s{
+    height: 300vh;
+    width: 100%;
+    padding: 0 15px;
+}
+
+#cut {
+    padding: 43px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 35px;
+}
+
+
+h2 {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 100;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#olicoc {
+    font-family: 'Dosis',sans-serif;
+    font-size: 30px;
+}
+
+header.rolagem {
+    background-color: #141414;
+}
+
+header {
+    background-color: transparent;
+    width: 100%;
+    padding: 24px;
+    position: fixed;
+}
+
+header a {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+}
+
+header ul li a {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    outline: none;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+header.rolagem ul li a:hover , header.rolagem #active {
+    border-color:#fff;
+}
+
+header ul li a:hover , #active{
+    border-color: #365A08;
+}
+
+#olicoc:hover {
+    color: #5D9D0B;
+    filter: blur(0.35px);
+}
+
+#btn-menu {
+    background-color: #365A08;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+::-webkit-transition {
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0,0,0.65,-0.4);
+    transition-delay: 0;
+    transition-property: all;
+}
+
+
+/*paginas esportes*/
+
+.title>h2 {
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.title {
+    padding: 0 35px;
+}
+
+.package-tables {
+    height: 246px;
+    display: flex;
+}
+
+
+.box-tabelas {
+height: fit-content;
+display: inline-block;
+margin: 0 2rem 2rem 0;
+vertical-align: bottom;
+box-sizing: content-box;
+max-width: 100%;
+}
+
+.box-tabelas:hover tr:nth-child(7){
+    display:contents;
+}
+
+.equipe th {
+    border: none;
+}
+
+
+table.equipe {
+    color:#ffffff;
+    width: 201px;
+    background-color: #365A08;
+    margin-bottom: 0.22rem;
+}
+
+table {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    width: 180px;
+    height: 30px;
+    
+}
+
+th {
+    width: 20px;
+    height: 30px;
+    font-weight: 500;
+}
+
+td,th {
+    padding: 2px;
+    border: 1px solid #d9d9d9;
+}
+
+
+tr:nth-child(7) {
+    display: none;
+}
