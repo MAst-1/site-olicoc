@@ -112,7 +112,6 @@ header ul li a:hover , #active{
 
 #olicoc:hover {
     color: #5D9D0B;
-    filter: blur(0.35px);
 }
 
 #btn-menu {
@@ -252,7 +251,6 @@ tr:nth-child(7) {
     }
 
     header ul li {
-        padding: 1rem 0;
         margin: 0 1rem;
         font-size: 14px;
         border-bottom: 2px solid rgba(0,0,0,0.322);
@@ -301,7 +299,7 @@ tr:nth-child(7) {
 
 
     #olicoc {
-        color: #365A08;
+        color: #d9d9d9;
         font-size: 20px;
     }
 
@@ -335,5 +333,15 @@ tr:nth-child(7) {
     .box-tabelas {
         margin: 1rem 0 0 0;
     }
-    
+
+    header ul li {
+        display: flex;
+    }
+
+    header ul li a {
+        display: flex;
+        width: 100%;
+        height: 55px;
+        align-items: center;
+    }
 }
