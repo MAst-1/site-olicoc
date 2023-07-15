@@ -1,4 +1,6 @@
 const btnMenu = document.getElementById('btn-menu');
+const btnVoltar = document.getElementsByClassName('container-s');
+
 function toggleMenu(event) {
     if(event.type=== 'touchstart') event.preventDefault();
     const nav = document.getElementById('nav');

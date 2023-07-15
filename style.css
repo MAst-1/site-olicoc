@@ -30,7 +30,8 @@ body {
 }
 
 #cut {
-    padding: 43px;
+    width: 100%;
+    height: 64px;
 }
 
 .conteudo{
@@ -209,16 +210,16 @@ tr:nth-child(7) {
     #btn-menu {
         display: block;
         display: flex;
-        padding: .5rem 1rem;
+        
         font-size: 1rem;
         border: none;
         background: none;
         cursor: pointer;
-        gap: .5rem;
+        
     }
 
     .flex {
-        align-items: stretch;
+        align-items: center;
         display: flex;
     }
 
@@ -228,7 +229,7 @@ tr:nth-child(7) {
         display: flex;
         flex-direction: column;
         width: 0;
-        top: 62px;
+        top: 58px;
         right: 0;
         height: 100vh;
         z-index: 1000;
@@ -236,12 +237,8 @@ tr:nth-child(7) {
         background-color: #141414;
     }
 
-    #nav.active #cut {
-        background-color: #141414;
-    }
-
     #nav.active #m {
-        width: 35%;
+        width: 45%;
     }
 
     header {
@@ -302,7 +299,9 @@ tr:nth-child(7) {
         top: -7px;
     }
 
+
     #olicoc {
+        color: #365A08;
         font-size: 20px;
     }
 
@@ -310,17 +309,31 @@ tr:nth-child(7) {
         font-size: 14px;
     }
 
+    .title {
+        margin-top: 10px;
+    }
+
+    .container-s {
+        padding: 0;
+    }
+
     h2 {
         font-size: 17px;
     }
 
     #cut {
-        padding: 32px;
+        width: 100%;
+        height: 58px;
     }
 
     .package-tables {
         height:auto ;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
+    .box-tabelas {
+        margin: 1rem 0 0 0;
+    }
+    
 }
