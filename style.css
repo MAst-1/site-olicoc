@@ -42,6 +42,11 @@ body {
 }
 
 
+p, p>li{
+    font-family:'Poppins', sans-serif;
+    color: #fff;
+}
+
 h2 {
     font-family: 'Open Sans',sans-serif;
     font-weight: 100;
