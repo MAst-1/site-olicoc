@@ -42,7 +42,8 @@ body {
 }
 
 
-p, p>li{
+
+.conteudo p, li{
     font-family:'Poppins', sans-serif;
     color: #fff;
 }
