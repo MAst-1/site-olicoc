@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
+    <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen"> 
     <link rel="shortcut icon" href="ico/olicoc.ico" type="image/x-icon">
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/load.css">
     <title>OLICOC 2023 - Handebol</title>
+    <script src="script/load.js"></script>
 </head>
-<body>
 
+<body onLoad="loading()">
+
+    <div class="box-load">
+        <div class="pre"><div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div></div>
+    </div>
+
+    <div class="content">
     <header id="header">
         <div class="container">
             <div class="flex">
@@ -106,7 +122,7 @@
                             <tr><th>7</th><td></td></tr>
                         </table></div>
                     <div class="box-tabelas">
-                        <table class="equipe"><tr><th colspan="2">3°B</th></tr></table>
+                        <table class="equipe"><tr><th>3°B</th></tr></table>
                         <table>
                             <tr><th>1</th><td></td></tr>
                             <tr><th>2</th><td></td></tr>
@@ -145,6 +161,8 @@
         </div><!--container-s-->
 
         <script src="script/script.js"></script>
+
+    </div>
 
     </body>
 

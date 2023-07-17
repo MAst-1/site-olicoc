@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
+    <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen"> 
     <link rel="shortcut icon" href="ico/olicoc.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles/load.css">
     <title>OLICOC 2023 - Outros </title>
-</head>
-<body>
+    <script src="script/load.js"></script>
 
+</head>
+
+<body onLoad="loading()">
+    <div class="box-load">
+        <div class="pre"><div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div></div>
+    </div>
+    <div class="content">
     <header id="header">
         <div class="container">
             <div class="flex">
@@ -38,7 +54,7 @@
     </header>  
     
     <script src="script/script.js"></script>
-
+    </div>
     </body>
 
 </html>

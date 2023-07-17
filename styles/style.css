@@ -210,7 +210,8 @@ tr:nth-child(7) {
     display: none;
 }
 
-@media screen and (max-width:900px){
+
+@media screen and (max-width:910px){
     #btn-menu {
         display: block;
         display: flex;
