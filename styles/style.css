@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Dosis&family=Bebas+Neue&family=Inter&display=swap');
 
+:root {
+    --cor-border:#d9d9d9;
+    --cor-fundo-header:#fff;
+    --cor-fundo-result:#d4d4d4;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -185,6 +191,7 @@ table {
     font-family: 'Open Sans', sans-serif;
     background-color: #fff;
     border-collapse: collapse;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.274);
 }
 
 td {
@@ -209,6 +216,9 @@ td,th {
 tr:nth-child(7) {
     display: none;
 }
+
+
+/*chaves do torneio*/
 
 
 @media screen and (max-width:910px){
