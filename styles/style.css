@@ -2,8 +2,8 @@
 
 :root {
     --cor-border:#d9d9d9;
-    --cor-fundo-header:#fff;
-    --cor-fundo-result:#d4d4d4;
+    --cor-fundo-bracket:#fff;
+    --cor-fundo-result:#365A08;
 }
 
 * {
@@ -220,6 +220,76 @@ tr:nth-child(7) {
 
 /*chaves do torneio*/
 
+.chave-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.chave-time {
+    border-radius: 2px;
+    border: 1px solid var(--cor-border);
+    background: var(--cor-fundo-bracket);
+    box-shadow: 2px 3px 4px 0px rgba(255, 255, 255, 0.13);
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.chave-team-points {
+    background: var(--cor-fundo-result);
+    min-width: 2rem;
+}
+
+.chave-team-points, .chave-team-name {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+
+
+.chave-header-content , .qrt-final-content , .semi-final-content {
+    font-family: 'Poppins', sans-serif;
+    color:#Fff;
+    text-transform: capitalize;
+}
+
+.chave-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.chave-semi-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.chave-playoffs-package {
+    display: flex;
+}
+
+.chave-qrt-package, .chave-semi-package{
+margin-top: 1rem;
+}
+
+.chave-semi-package {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.qrt-final, .semi-final{
+    min-width: 160px;
+}
+
+.qrt-final-content, .semi-final-content {
+    font-size: 14px;
+}
 
 @media screen and (max-width:910px){
     #btn-menu {
