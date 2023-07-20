@@ -4,6 +4,7 @@
     --cor-border:#d9d9d9;
     --cor-fundo-bracket:#fff;
     --cor-fundo-result:#365A08;
+    --cor-fundo-header: #141414;
 }
 
 * {
@@ -157,8 +158,9 @@ header ul li a:hover , #active{
 }
 
 .package-tables {
-    height: 246px;
+    height: 245px;
     display: flex;
+    justify-content: center;
 }
 
 
@@ -191,7 +193,7 @@ table {
     font-family: 'Open Sans', sans-serif;
     background-color: #fff;
     border-collapse: collapse;
-    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.274);
+    box-shadow: 2px 3px 4px 0px rgba(255, 255, 255, 0.13);
 }
 
 td {
@@ -226,7 +228,7 @@ tr:nth-child(7) {
     align-items: flex-start;
 }
 
-.chave-time {
+.chave-team {
     border-radius: 2px;
     border: 1px solid var(--cor-border);
     background: var(--cor-fundo-bracket);
@@ -248,33 +250,29 @@ tr:nth-child(7) {
     padding: 3px;
 }
 
+.chave-header-content {
+    padding: 0.5rem;
+    font-size:150%;
+    background-color: var(--cor-fundo-header);
+    border: 1px solid var(--cor-border);
+    border-radius: 2px;
+}
 
-.chave-header-content , .qrt-final-content , .semi-final-content {
+.chave-header-content , .qrt-final-content , .semi-final-content, .chave-final-content {
     font-family: 'Poppins', sans-serif;
     color:#Fff;
     text-transform: capitalize;
 }
 
-.chave-content{
+.chave-content , .chave-semi-content, .chave-final-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin-bottom: 4rem;
 }
 
-.chave-semi-content {
+.chave-playoffs-upper-package {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 4rem;
-}
-
-.chave-playoffs-package {
-    display: flex;
-}
-
-.chave-qrt-package, .chave-semi-package{
-margin-top: 1rem;
 }
 
 .chave-semi-package {
@@ -283,12 +281,31 @@ margin-top: 1rem;
     justify-content: space-around;
 }
 
-.qrt-final, .semi-final{
+.chave-final-package {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chave-team.qrt-final, .chave-team.semi-final, .chave-team.final{
     min-width: 160px;
 }
 
-.qrt-final-content, .semi-final-content {
+.qrt-final-content, .semi-final-content, .final-content {
     font-size: 14px;
+}
+
+.chave-game-connectors {
+    align-self: stretch;
+    position: relative;
+    width: 60px;
+}
+
+
+.line {
+    position: absolute;
+    background-color: var(--cor-border);
+    box-shadow: 2px 3px 4px 0px rgba(255, 255, 255, 0.13);;
 }
 
 @media screen and (max-width:910px){
@@ -430,4 +447,17 @@ margin-top: 1rem;
         height: 55px;
         align-items: center;
     }
+
+    .game-content {
+        overflow: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        height: 1px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        color: transparent;
+    }
+
 }
