@@ -276,7 +276,7 @@ td,th {
 
 .chave-header-content {
     padding: 0.5rem;
-    font-size:150%;
+    font-size:18px;
     background-color: var(--cor-fundo-header);
     border: 1px solid var(--cor-border);
     border-radius: 2px;
