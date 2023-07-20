@@ -5,6 +5,7 @@
     --cor-fundo-bracket:#fff;
     --cor-fundo-result:#365A08;
     --cor-fundo-header: #141414;
+    --cor-border-header:#365A08;
 }
 
 * {
@@ -77,6 +78,7 @@ header.rolagem {
 }
 
 header {
+    z-index: 3;
     background-color: transparent;
     width: 100%;
     padding: 24px;
@@ -114,12 +116,8 @@ a:hover {
     transition: all .3s;
 }
 
-header.rolagem ul li a:hover , header.rolagem #active {
-    border-color:#fff;
-}
-
-header ul li a:hover , #active{
-    border-color: #365A08;
+header ul li a:hover , #active, header.rolagem ul li a:hover , header.rolagem #active {
+    border-color:var(--cor-border-header);
 }
 
 #olicoc:hover {
@@ -149,8 +147,22 @@ header ul li a:hover , #active{
 
 /*paginas esportes*/
 
+@media screen and (max-width:575px) {
+    .box-tabelas {
+        margin: 1rem 0 0 0;
+    }
+
+}
+
+@media screen and (min-width:512px) {
+    .box-tabelas {
+        margin: 0 2rem 2rem 0;
+        }
+}
+
+
 .title>h2 {
-    border-bottom: 2px solid #365A08;
+    border-bottom: 2px solid var(--cor-border-header);
 }
 
 .title {
@@ -158,9 +170,9 @@ header ul li a:hover , #active{
 }
 
 .package-tables {
-    height: 245px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -173,8 +185,18 @@ box-sizing: content-box;
 max-width: 100%;
 }
 
-.box-tabelas:hover tr:nth-child(7){
-    display:contents;
+#players {
+    z-index: 1;
+}
+
+table#more-players {
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+}
+
+.box-tabelas:hover  table#more-players{
+  opacity: 1;
 }
 
 .equipe th {
@@ -214,12 +236,6 @@ td,th {
     border: 1px solid #d9d9d9;
 }
 
-
-tr:nth-child(7) {
-    display: none;
-}
-
-
 /*chaves do torneio*/
 
 .chave-grid {
@@ -233,14 +249,22 @@ tr:nth-child(7) {
     border: 1px solid var(--cor-border);
     background: var(--cor-fundo-bracket);
     box-shadow: 2px 3px 4px 0px rgba(255, 255, 255, 0.13);
-    display: flex;
-    justify-content: space-between;
     height: 30px;
+}
+
+.chave-team .chave-team-name {
+    float: left;
+}
+
+.chave-team .chave-team-points {
+    float: right;
 }
 
 .chave-team-points {
     background: var(--cor-fundo-result);
     min-width: 2rem;
+    min-height: 28px;
+    color: #fff;
 }
 
 .chave-team-points, .chave-team-name {
@@ -288,7 +312,7 @@ tr:nth-child(7) {
 }
 
 .chave-team.qrt-final, .chave-team.semi-final, .chave-team.final{
-    min-width: 160px;
+    min-width: 128px;
 }
 
 .qrt-final-content, .semi-final-content, .final-content {
@@ -431,10 +455,6 @@ tr:nth-child(7) {
         height:auto ;
         justify-content: center;
         flex-wrap: wrap;
-    }
-
-    .box-tabelas {
-        margin: 1rem 0 0 0;
     }
 
     header ul li {
