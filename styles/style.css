@@ -282,20 +282,20 @@ td,th {
     border-radius: 2px;
 }
 
-.chave-header-content , .qrt-final-content , .semi-final-content, .chave-final-content {
+.chave-header-content , .qrt-final-content , .semi-final-content, .final-content, .lower-content {
     font-family: 'Poppins', sans-serif;
     color:#Fff;
     text-transform: capitalize;
 }
 
-.chave-content , .chave-semi-content, .chave-final-content {
+.chave-content , .chave-semi-content, .chave-final-content, .chave-lower-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 4rem;
 }
 
-.chave-playoffs-upper-package {
+.chave-playoffs-upper-package, .chave-playoffs-lower-package {
     display: flex;
 }
 
@@ -311,11 +311,11 @@ td,th {
     justify-content: center;
 }
 
-.chave-team.qrt-final, .chave-team.semi-final, .chave-team.final{
+.chave-team.qrt-final, .chave-team.semi-final, .chave-team.final, .chave-team.lower{
     min-width: 128px;
 }
 
-.qrt-final-content, .semi-final-content, .final-content {
+.qrt-final-content, .semi-final-content, .final-content, .lower-content {
     font-size: 14px;
 }
 
