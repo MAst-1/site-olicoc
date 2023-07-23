@@ -460,7 +460,7 @@ td,th {
     }
 
     .game-content {
-        overflow: scroll;
+        overflow:scroll;
     }
 
     ::-webkit-scrollbar {
