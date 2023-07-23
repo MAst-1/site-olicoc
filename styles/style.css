@@ -147,20 +147,6 @@ header ul li a:hover , #active, header.rolagem ul li a:hover , header.rolagem #a
 
 /*paginas esportes*/
 
-@media screen and (max-width:575px) {
-    .box-tabelas {
-        margin: 1rem 0 0 0;
-    }
-
-}
-
-@media screen and (min-width:512px) {
-    .box-tabelas {
-        margin: 0 2rem 2rem 0;
-        }
-}
-
-
 .title>h2 {
     border-bottom: 2px solid var(--cor-border-header);
 }
@@ -312,7 +298,7 @@ td,th {
 }
 
 .chave-team.qrt-final, .chave-team.semi-final, .chave-team.final, .chave-team.lower{
-    min-width: 128px;
+    min-width: 130px;
 }
 
 .qrt-final-content, .semi-final-content, .final-content, .lower-content {
@@ -323,6 +309,11 @@ td,th {
     align-self: stretch;
     position: relative;
     width: 60px;
+}
+
+.chave-lower-3-package {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -480,4 +471,17 @@ td,th {
         color: transparent;
     }
 
+}
+
+@media screen and (max-width:512px) {
+    .box-tabelas {
+        margin: 1rem 0 0 0;
+    }
+
+}
+
+@media screen and (min-width:512px) {
+    .box-tabelas {
+        margin: 0 2rem 2rem 0;
+        }
 }
