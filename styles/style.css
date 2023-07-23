@@ -469,6 +469,7 @@ td,th {
     }
 
     .game-content {
+        overflow-x:none;
         overflow-y: scroll;
     }
 
