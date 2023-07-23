@@ -469,8 +469,7 @@ td,th {
     }
 
     .game-content {
-        overflow-x:visible;
-        overflow-y:scroll;
+        overflow:scroll;
     }
 
     ::-webkit-scrollbar {
