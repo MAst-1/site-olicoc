@@ -147,6 +147,18 @@ header ul li a:hover , #active, header.rolagem ul li a:hover , header.rolagem #a
 
 /*paginas esportes*/
 
+#btn-display {
+    display: none;
+}
+
+.time-tabela.ativo {
+    display:block;
+}
+
+.time-tabela {
+    display: none;
+}
+
 .title>h2 {
     border-bottom: 2px solid var(--cor-border-header);
 }
@@ -161,11 +173,9 @@ header ul li a:hover , #active, header.rolagem ul li a:hover , header.rolagem #a
     flex-wrap: wrap;
 }
 
-
 .box-tabelas {
 height: fit-content;
 display: inline-block;
-margin: 0 2rem 2rem 0;
 vertical-align: bottom;
 box-sizing: content-box;
 max-width: 100%;
@@ -223,6 +233,11 @@ td,th {
 }
 
 /*chaves do torneio*/
+
+.game-content {
+    display: flex;
+    justify-content: space-between;
+}
 
 .chave-grid {
     display: flex;
