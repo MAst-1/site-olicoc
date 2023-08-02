@@ -146,17 +146,8 @@ header ul li a:hover , #active, header.rolagem ul li a:hover , header.rolagem #a
 
 
 /*paginas esportes*/
-
-#btn-display {
-    display: none;
-}
-
 .time-tabela.ativo {
     display:block;
-}
-
-.time-tabela {
-    display: none;
 }
 
 .title>h2 {
@@ -339,6 +330,10 @@ td,th {
 }
 
 @media screen and (max-width:910px){
+    .time-tabela>div:last-child{
+        padding: 0;
+    }
+
     #btn-menu {
         display: block;
         display: flex;
