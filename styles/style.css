@@ -46,12 +46,13 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem 3rem;
-}
-
-.conteudo p , .conteudo li a , li::marker{
     font-family:'Poppins', sans-serif;
     color: #fff;
-    text-decoration: none;
+}
+
+.conteudo li a , li::marker{
+    color: #fff;
+    text-decoration: underline;
 }
 
 
